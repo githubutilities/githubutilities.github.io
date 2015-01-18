@@ -1,0 +1,12 @@
+# Site settings
+title: githubutilities at github
+email: githubutilities@163.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is githubutilities dedicating to upgrade personal workflow.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://githubutilities.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  githubutilities
+
+# Build settings
+markdown: kramdown
