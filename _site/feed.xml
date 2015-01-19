@@ -6,17 +6,15 @@
 </description>
     <link>http://githubutilities.github.io/</link>
     <atom:link href="http://githubutilities.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Jan 2015 13:06:23 +0800</pubDate>
-    <lastBuildDate>Mon, 19 Jan 2015 13:06:23 +0800</lastBuildDate>
+    <pubDate>Mon, 19 Jan 2015 13:19:01 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2015 13:19:01 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Sematic UI pitfalls</title>
         <description>&lt;p&gt;here is the code snippet in &lt;code&gt;sematic.css&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;css
-@import &#39;https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;amp;subset=latin&#39;;
-&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;amp;subset=latin&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;code&gt;sematic.css&lt;/code&gt; import font using google online api which may cause trouble due to the network connectivity.&lt;/p&gt;
