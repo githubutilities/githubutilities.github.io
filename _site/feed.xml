@@ -6,9 +6,32 @@
 </description>
     <link>http://githubutilities.github.io/</link>
     <atom:link href="http://githubutilities.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Jan 2015 11:23:16 +0800</pubDate>
-    <lastBuildDate>Sun, 18 Jan 2015 11:23:16 +0800</lastBuildDate>
+    <pubDate>Mon, 19 Jan 2015 13:06:23 +0800</pubDate>
+    <lastBuildDate>Mon, 19 Jan 2015 13:06:23 +0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Sematic UI pitfalls</title>
+        <description>&lt;p&gt;here is the code snippet in &lt;code&gt;sematic.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;css
+@import &#39;https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;amp;subset=latin&#39;;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;sematic.css&lt;/code&gt; import font using google online api which may cause trouble due to the network connectivity.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 19 Jan 2015 20:46:22 +0800</pubDate>
+        <link>http://githubutilities.github.io/sematic/ui/2015/01/19/sematic-ui.html</link>
+        <guid isPermaLink="true">http://githubutilities.github.io/sematic/ui/2015/01/19/sematic-ui.html</guid>
+        
+        
+        <category>sematic</category>
+        
+        <category>ui</category>
+        
+      </item>
     
       <item>
         <title>Welcome to Jekyll!</title>
