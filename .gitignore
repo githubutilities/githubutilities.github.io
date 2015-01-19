@@ -27,5 +27,8 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
+# static site page
+_site
+
 # sass cache
 .sass-cache
