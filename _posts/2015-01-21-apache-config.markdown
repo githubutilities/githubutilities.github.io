@@ -4,6 +4,7 @@ title:  "Apache Configuration"
 date:   2015-01-21 16:29:00
 categories: apache
 ---
+
 ### Query apache config file path
 
 * run `apachectl -V | grep SERVER_CONFIG_FILE` to get the config file relative path
