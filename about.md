@@ -5,5 +5,5 @@ permalink: /about/
 ---
 
 This is githubutilities dedicating to upgrade personal workflow. 
-Visit me at [Github](http://githubutilities.github.io)
+Visit me at [Github](https://github.com/githubutilities)
 
