@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git Server on VPS"
-date:   2015-01-21 21:30:00
+date:   2015-01-21 21:30
 categories: git
 ---
 

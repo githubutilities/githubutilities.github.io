@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sematic UI pitfalls"
-date:   2015-01-19 12:46:22
+date:   2015-01-19 12:46
 categories: sematic ui
 ---
 

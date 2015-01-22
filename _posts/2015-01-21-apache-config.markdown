@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apache Configuration"
-date:   2015-01-21 16:29:00
+date:   2015-01-21 16:29
 categories: apache
 ---
 
@@ -14,7 +14,7 @@ categories: apache
 
 Including `httpd-vhosts.conf` in `httpd.conf` may conflict with whatever DocumentRoot specified, it's best to comment include script at first.
 
-{% highlight sh %}
+{% highlight sh linenos%}
 DocumentRoot "/var/www"
 
 # Virtual hosts
