@@ -11,6 +11,8 @@ categories: git
 2. `git init --bare project-name.git` as `git` user
 3. on the local mechine, run `git init && git remote add origin git@example.com:project-name.git`
 
+{{ page.date | date :"%c" }}
+
 ### Reference
 1. digitalocean[^more_info]
 2. [ams at toroid][toroid]
