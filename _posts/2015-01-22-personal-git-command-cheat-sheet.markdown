@@ -15,6 +15,7 @@ git add -A
 
 {% highlight sh %}
 git remote -v
+git remote show origin
 {% endhighlight %}
 
 ## Amending commit message
@@ -22,6 +23,28 @@ git remote -v
 {% highlight sh %}
 git commit --amend
 git commit --amend -m "New commit message"
+{% endhighlight %}
+
+## Branching
+
+{% highlight sh %}
+# create new branch
+git branch branch-name
+
+# show all branches
+git branch -a
+
+# show all remote branches
+git branch -r
+
+# switch between branches
+git checkout branch-name
+{% endhighlight %}
+
+## Update local repository
+
+{% highlight sh %}
+git pull
 {% endhighlight %}
 
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
