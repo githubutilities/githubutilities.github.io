@@ -5,10 +5,16 @@ date:   2015-01-22 17:10
 categories: git
 ---
 
-## Update index with all changes
+## Clone specific branch
 
 {% highlight sh %}
-git add -A
+git clone -b branch-name remote-repo
+{% endhighlight %}
+
+## Update local repository
+
+{% highlight sh %}
+git pull
 {% endhighlight %}
 
 ## View Git remote URL
@@ -16,13 +22,6 @@ git add -A
 {% highlight sh %}
 git remote -v
 git remote show origin
-{% endhighlight %}
-
-## Amending commit message
-
-{% highlight sh %}
-git commit --amend
-git commit --amend -m "New commit message"
 {% endhighlight %}
 
 ## Branching
@@ -41,10 +40,17 @@ git branch -r
 git checkout branch-name
 {% endhighlight %}
 
-## Update local repository
+## Update index with all changes
 
 {% highlight sh %}
-git pull
+git add -A
+{% endhighlight %}
+
+## Amending commit message
+
+{% highlight sh %}
+git commit --amend
+git commit --amend -m "New commit message"
 {% endhighlight %}
 
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
