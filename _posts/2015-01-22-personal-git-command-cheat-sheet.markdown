@@ -46,11 +46,19 @@ git checkout branch-name
 git add -A
 {% endhighlight %}
 
-## Amending commit message
+## Commit
 
 {% highlight sh %}
+# amending commit message
 git commit --amend
 git commit --amend -m "New commit message"
+
+# editing commit history
+git rebase -i HEAD~2
+## this will show the last 2 commit changes made in a editor
+## delete the commit you want to delete and save the changes
+git push -f origin master
+## push the changes with force to master branch
 {% endhighlight %}
 
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
