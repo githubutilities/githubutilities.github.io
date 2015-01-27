@@ -62,4 +62,4 @@ git push -f origin master
 {% endhighlight %}
 
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
-
+## [Git Cheat Sheet by Github Education](https://education.github.com/git-cheat-sheet-education.pdf)
