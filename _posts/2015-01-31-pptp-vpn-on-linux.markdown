@@ -177,4 +177,7 @@ $SystemLogRateLimitBurst 500
 
 > Visit [here](https://www.digitalocean.com/community/tutorials/how-to-view-and-configure-linux-logs-on-ubuntu-and-centos) for more info about linux logs
 
+## Reference
+* [how to install pptp vpn server on centos 6.x](http://drewsymo.com/2013/11/how-to-install-pptp-vpn-server-on-centos-6-x/)
+* [pptp vpn server on ubuntu](https://www.evernote.com/shard/s411/sh/cdcfeedf-1a7d-49a1-97ba-ffb5ae176e70/014c859d05ee5df4c3d2dfc5c8fa52ac)
 
