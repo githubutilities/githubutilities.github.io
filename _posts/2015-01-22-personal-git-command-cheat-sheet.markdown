@@ -46,7 +46,24 @@ git checkout branch-name
 git add -A
 {% endhighlight %}
 
+## Stash
+
+``` sh
+# stash the changes
+git stash
+
+# list the stash
+git stash list
+
+# pop the top stash
+git stash pop
+```
+
 ## Commit
+
+* to add a feature
+* to remove a bug
+* to refactor the source code
 
 {% highlight sh %}
 # amending commit message
