@@ -7,7 +7,7 @@ categories: Linux, mount
 
 ## Edit `/etc/fstab`, e.g.
 
-``` config
+```
 /dev/xvdb1      /home/git/data      ext4    defaults    0 0
 ```
 
