@@ -10,6 +10,6 @@ github_username:  githubutilities
 
 # Build settings
 # markdown: kramdown
-markdown: redcarpet2
+markdown: redcarpet
 redcarpet:
-	extensions: ["strikethrough"]
+   extensions: ["strikethrough"]
