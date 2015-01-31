@@ -9,5 +9,7 @@ twitter_username:
 github_username:  githubutilities
 
 # Build settings
-markdown: kramdown
-
+# markdown: kramdown
+markdown: redcarpet2
+redcarpet:
+	extensions: ["strikethrough"]
