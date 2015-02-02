@@ -9,7 +9,7 @@ categories: linux,android,busybox,root
 
 ### Successful Attempt
 
-* 360root[http://root.360.cn]
+* [360root](http://root.360.cn)
 
 ### Unsuccessful Attempt
 
