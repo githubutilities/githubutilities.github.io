@@ -5,6 +5,18 @@ date:   2015-01-22 17:10
 categories: git
 ---
 
+## Fix `.gitignore` not working
+
+```sh
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
+
+# Or you can remove specific file like finder cache
+git rm --cached .DS_Store
+# then commit you changes
+```
+
 ## Clone specific branch
 
 {% highlight sh %}
