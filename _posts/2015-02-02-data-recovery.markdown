@@ -21,6 +21,21 @@ Individual file recovery is possible regardless of the state of the filesystem, 
 * GNU Parted
 * Gpart
 
+# Recover file system [link](http://askubuntu.com/questions/533496/accidentally-formatted-ext4-partition)
+
+Unfortunately after hours with this utility, TestDisk was able to find my old partition, but the root inode was destroyed, so I gave up on using TestDisk and decided to try to recover the ext backup superblock manually.
+
+this will be used to calculate where the backup superblocks will be located in the event you were to create a ext filesystem on the partition in question mke2fs (make extended 2 file-system) for ext2/3/4
+
+this will be used to attempt to restore the filesystem using one of the backup superblocks e2fsck (extended 2 file-system check) also for ext2/3/4
+
+An explanation on how to recover an ext superblock manually using these utilities can be found here: http://ing-tani.blogspot.com/2013/01/repair-broken-ext4-superblock-in-ubuntu.html
+
+SIDE NOTE: if your partition table is intact (not the case for me), then you could perhaps make use of dumpe2fs like so: http://www.cyberciti.biz/faq/linux-find-alternative-superblocks/
+
+if you are unable to use these utilities to find the backup superblocks (perhaps you messed up multiple partitions, and because of this, you don't know where they start/end) you may find use of a program called gpart (not to be confused with gparted or parted... it's totally different) though I'm not sure if it supports linux file-systems newer than ext2.. If you are at this point, It may be time to start worrying.
+
+
 # Forensics Image Manipultating
 
 * Mounting your disk image
@@ -83,6 +98,7 @@ Use the following utilities to recover from image file
 # Reference
 
 * [ubuntu help](https://help.ubuntu.com/community/DataRecovery)
+* [ubuntu help for ext](http://askubuntu.com/questions/533496/accidentally-formatted-ext4-partition)
 * [**Linux LEO**](http://www.linuxleo.com/)
 * [**Forensics Wiki**](http://forensicswiki.org/wiki/Main_Page)
 * [ddrescue forensics wiki](http://www.forensicswiki.org/wiki/Ddrescue)
