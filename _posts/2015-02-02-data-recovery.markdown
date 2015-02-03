@@ -74,6 +74,10 @@ Use the following utilities to recover from image file
     - the recovered files will be saved in your current directory with name pattern `image*.jpg`.
 * [Ntfsprogs](https://help.ubuntu.com/community/DataRecovery#Ntfsprogs)
     - As the name indicates, `ntfsundelete` can recover deleted files from an NTFS file-system.
+* Scalpel
+    - `scalpel` depends on `autoconf`, `automake`, `libtool`, `tre`, use any method to install this package
+    - `scalpel` is an config-base tool, you must create a `scalpel.conf` file in the working directory and add your configuration in it
+    - run `scalpel YOUR-FILE -o OUTPUT-DIRECTORY`
 
 
 # [Cleaning up](https://help.ubuntu.com/community/DataRecovery#Cleaning_up)
