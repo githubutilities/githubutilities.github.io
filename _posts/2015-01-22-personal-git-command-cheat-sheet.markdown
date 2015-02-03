@@ -77,7 +77,7 @@ git stash pop
 * to remove a bug
 * to refactor the source code
 
-{% highlight sh %}
+```sh
 # amending commit message
 git commit --amend
 git commit --amend -m "New commit message"
@@ -88,7 +88,16 @@ git rebase -i HEAD~2
 ## delete the commit you want to delete and save the changes
 git push -f origin master
 ## push the changes with force to master branch
-{% endhighlight %}
 
+# Revert the commit we just created
+git revert HEAD
+
+# Reset to most recent commit but keep all working directory changes
+git reset
+# Reset to most recent commit and overwrite all working directory changes
+git reset --hard
+```
+
+## [Git Reset Tutor](https://www.atlassian.com/zh/git/tutorial/undoing-changes#!reset)
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
 ## [Git Cheat Sheet by Github Education](https://education.github.com/git-cheat-sheet-education.pdf)
