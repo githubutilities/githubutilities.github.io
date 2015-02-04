@@ -5,6 +5,46 @@ date:   2015-01-22 17:10
 categories: git
 ---
 
+## Show Git Status
+
+```sh
+git status
+
+git log
+
+git show
+```
+
+## Update Your fork
+
+```sh
+# Add a upstream repo
+git remote add upstream <upstream-repo>
+git fetch upstream
+git checkout master
+
+# Make a clean fork and also a clean commit
+# The `--rebase` option places your changes on top of the latest commit without merges.
+# `git pull` is fetch + merge
+git pull --rebase upstream master
+
+# Merge your commits into one
+# Undo all your commits with your file changes untouched
+git reset --soft upstream/master
+# Commit your single changes
+git commit -a
+# Check your changes, use `gitx` in Mac OS X or `gitk` in linux
+git diff <branch 1> <branch 2>
+
+#git fetch upstream
+#git checkout master
+###git merge upstream/master master
+# Rewrite your master branch so that any commits of yours that
+# aren't already in upstream/master are replayed on top of that
+# other branch:
+#git rebase upstream/master
+```
+
 ## Fix `.gitignore` not working
 
 ```sh
