@@ -35,6 +35,11 @@ Reference
 * [TP-LINK WDSed with Xiaomi Router](http://bbs.xiaomi.cn/thread-9999187-1-1.html)
 
 
+# OpenWrt is a common system for Wireless Routers
+
+OpenWrt is Linux distribution for embedded devices and provides fully writable filesystem with package management instead of single, static firmware.
+
+
 # ISSUE: Can not Connect to Wireless Router
 
 Try restart the router. If this works, try schedule the restart process.
