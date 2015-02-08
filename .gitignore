@@ -32,3 +32,6 @@ _site
 
 # sass cache
 .sass-cache
+
+# Mac OS X finder caches
+.DS_Store
