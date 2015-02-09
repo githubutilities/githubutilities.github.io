@@ -65,3 +65,25 @@ reference
 
 * [ubuntu](https://help.ubuntu.com/community/How%20to%20Create%20a%20Network%20Share%20Via%20Samba%20Via%20CLI%20(Command-line%20interface/Linux%20Terminal)%20-%20Uncomplicated,%20Simple%20and%20Brief%20Way!)
 * [lintut](http://lintut.com/easy-samba-server-installation-on-centos-6-5/)
+
+
+# FTP
+
+```sh
+# install `vsftpd` with any method
+yum install vsftpd
+apt-get install vsftpd
+
+# if you enable anonymous user login, the `pub` directory is in `/var/pub`
+> anonymous_enable=YES
+> local_enable=YES
+
+# restart service
+/etc/init.d/vsftpd restart
+```
+
+reference
+
+* [ubuntu](https://help.ubuntu.com/community/vsftpd)
+* [digitalocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-vsftpd-on-centos-6--2)
+* [binarytides](http://www.binarytides.com/vsftpd-configure-ssl-ftps/)

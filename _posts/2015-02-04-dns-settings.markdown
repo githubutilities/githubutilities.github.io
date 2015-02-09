@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mac OS X Filesystem Support"
+title:  "DNS Settings"
 date:   2015-02-04 16:50
 categories: chrome,dns
 ---
