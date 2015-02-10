@@ -132,6 +132,13 @@ git rebase -i HEAD~2
 git push -f origin master
 ## push the changes with force to master branch
 
+# go back commit
+git log
+git push origin +7f6d03:master
+## or
+git reset 7f6d03 --hard
+git push -f origin master
+
 # Revert the commit we just created
 git revert HEAD
 
