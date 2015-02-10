@@ -40,7 +40,7 @@ yum install <package-name>
     > brew rm FORMULA
     > brew rm $(join <(brew leaves) <(brew deps FORMULA))
     > ```
-    > also in [here](https://gist.github.com/cskeeters/10ff1295bca93808213d)
+    > use `brew_clean` script also in [here](https://gist.github.com/cskeeters/10ff1295bca93808213d)
     >
     > ```sh
     > brew leaves > brew_packages
