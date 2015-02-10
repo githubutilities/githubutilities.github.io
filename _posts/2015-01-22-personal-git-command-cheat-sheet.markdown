@@ -79,6 +79,9 @@ git remote show origin
 ## Branching
 
 {% highlight sh %}
+# show current branch
+git branch
+
 # create new branch
 git branch branch-name
 
