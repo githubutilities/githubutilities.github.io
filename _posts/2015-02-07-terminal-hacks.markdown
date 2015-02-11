@@ -15,3 +15,7 @@ echo -e "\a"
 
 ping -c 5 google.com && tput bel
 ```
+
+reference
+
+* [setup os x development](http://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell)
