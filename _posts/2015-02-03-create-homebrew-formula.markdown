@@ -52,6 +52,9 @@ end
 # Use `openssl` to get the `sha1` checksum
 openssl sha1 [full path to file]
 
+# generate `sha256`
+shasum -a 256
+
 # List all `tap`s
 brew tap
 
@@ -72,3 +75,5 @@ brew list | while read cask; do echo -n "$cask ->"; brew deps $cask | awk '{prin
 # Reference
 * [Homebrew formula cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md#formula-cookbook)
 * [GNU Autotools Tutor](https://www.lrde.epita.fr/~adl/dl/autotools.pdf)
+* [Distribute using bintray](http://blog.bintray.com/2013/05/30/google-and-github-insist-go-store-your-binaries-in-a-proper-place/)
+* [bintray](https://bintray.com)

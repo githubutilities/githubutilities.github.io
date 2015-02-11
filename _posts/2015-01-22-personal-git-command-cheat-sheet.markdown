@@ -121,6 +121,9 @@ git stash pop
 * to refactor the source code
 
 ```sh
+# show file changes history
+git log -p <filename>
+
 # amending commit message
 git commit --amend
 git commit --amend -m "New commit message"
