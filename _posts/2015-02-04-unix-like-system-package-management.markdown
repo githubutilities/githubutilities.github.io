@@ -47,3 +47,4 @@ yum install <package-name>
     > brew_clean brew_packages
     > ```
 * get info about a package `brew info <package-name>`
+* use `homebrew-brewdler` to manage your `homebrew`, run `brew brewdle dump` to backup your `homebrew`
