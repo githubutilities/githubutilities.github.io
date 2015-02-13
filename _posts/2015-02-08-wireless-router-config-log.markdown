@@ -25,9 +25,8 @@ Here is a sample to config WDS repeating:
     > It is better to use the static IP method
 
 2. disable the DHCP function of WDS hop
-3. config the SSID and BSSID, restart and done!
-4. if not working, try config router channel to use same channel
-    > I succeeded config WDS without configuring the router to use the same channel
+3. config the SSID and BSSID
+4. config router to use the same channel as root AP, restart and done!
 
 Reference
 
