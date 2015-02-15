@@ -26,3 +26,15 @@ By default, amazon does not allow `ping` request for security reason. You can ch
 1. Login AWS Management Console and go to EC2
 2. Goto `NETWORK & SECURITY`--`Security Groups` on the left
 3. Add a `Inbound` rule, select `Custom ICMP rule`, type:`echo request`, source from anywhere
+
+
+# Entry three -- Connect to my EC2 Instance using `ssh`
+
+```sh
+ssh -i your.pem ubuntu@your.ec2.ip
+```
+
+Reference
+
+* [amazon-aws-ec2-guide](http://feilong.me/2011/01/amazon-aws-ec2-guide)
+* [someone doing sth nasty](http://blog.csdn.net/zzban/article/details/8690013)
