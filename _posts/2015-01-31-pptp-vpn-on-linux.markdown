@@ -95,6 +95,7 @@ iptables -t nat --flush
 # add routing record to iptables
 # 192.168.0.0/24 is your local network configed in `etc/pptpd.conf`
 # `eth1` is your destination internet card interface
+# enabled outbound NAT to eth0
 iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j MASQUERADE
 # or in AWS, route it to the `eth0`'s `inet address`(run `ifconfig` to get it)
 sudo iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -j SNAT --to 172.16.4.6
