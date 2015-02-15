@@ -16,6 +16,8 @@ categories: aws,registration
 4. Validate your phone number by the automated phone call system
 5. Done and wait. 
 
+> the key is the credit card and phone number which should be brand new to `amazon` and address info should base on ip location
+
 
 # Entry two -- Edit Amazon EC2 Instance to Allow `ping` Request
 
