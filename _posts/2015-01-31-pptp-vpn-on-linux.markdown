@@ -9,26 +9,36 @@ categories: linux,redhat
 
 Most people want their tunnels encrypted. Check the version of your kernel; if it is below 2.6.15-rc1 then you do not have MPPE support. To check further, test like this:
 
-{% highlight sh %}
+```sh
 modprobe ppp-compress-18 && echo ok
-{% endhighlight %}
+```
 
 
 ## Install `ppp` and `pptpd`
 
-{% highlight sh %}
+* `ppp` support multiple protocol including `tcp/ip`, the most common way to ensure this is by allowing `tcp/ip` data flow through your firewall.
+
+```sh
 # install `ppp`
 yum install ppp
+# or `ubuntu`
+sudo apt-get install ppp
 
 # install `pptpd`
 rpm -i http://poptop.sourceforge.net/yum/stable/rhel6/pptp-release-current.noarch.rpm
 yum -y install pptpd
-{% endhighlight %}
+# or in `ubuntu`
+sudo apt-get install pptpd
+```
 
 
 ## Config `pptpd` and `ppp`
 
-{% highlight sh %}
+* `/etc/pptpd.conf`
+* `/etc/ppp/pptpd-options`
+* `/etc/ppp/chap-secrets`
+
+```sh
 # Configure IP Address Range
 # uncomment the following line in `/etc/pptpd.conf`
 > localip 192.168.0.1
@@ -51,22 +61,22 @@ egrep -v '^#.*' /etc/pptpd.conf  | egrep -v '^$'
 # Adding users to `/etc/ppp/chap-secrets`
 # * for automatically ip allocation
 echo "username  pptpd   password    *" >> /etc/ppp/chap-secrets
-{% endhighlight %}
+```
 
 ## Setup IP Forwarding
 
-{% highlight sh %}
+```sh
 # change the following line in `/etc/sysctl.conf`
 > net.ipv4.ip_forward=1
 
 # reload the configuration to apply the changes
 sysctl -p
-{% endhighlight %}
+```
 
 
 ## Routing using `iptable`
 
-{% highlight sh %}
+```sh
 # list the nat setting
 iptables -t nat --list
 
@@ -86,6 +96,8 @@ iptables -t nat --flush
 # 192.168.0.0/24 is your local network configed in `etc/pptpd.conf`
 # `eth1` is your destination internet card interface
 iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j MASQUERADE
+# or in AWS, route it to the `eth0`'s `inet address`(run `ifconfig` to get it)
+sudo iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -j SNAT --to 172.16.4.6
 
 # save `iptable` setting to `/etc/sysconfig/iptables`
 # so changes will not be lost after restart
@@ -93,12 +105,12 @@ iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j MASQUERADE
 
 # restart iptables for changes to take effects
 /etc/init.d/iptables restart
-{% endhighlight %}
+```
 
 
 ## Config `pptpd` and `iptables` to start at startup
 
-{% highlight sh %}
+```sh
 # start `pptpd` and `iptables` at startup
 chkconfig pptpd on
 chkconfig iptables on
@@ -106,19 +118,25 @@ chkconfig iptables on
 # start and stop services
 service iptables restart
 /etc/init.d/pptpd restart
-{% endhighlight %}
+```
 
 
 ## Troubleshooting
 
-
+1. ensure `ppp` connection is OK which involves `firewall settings` and `/etc/ppp/chap-secrets`, to test:
+    - run `ifconfig` to see whether there is a `ppp` interface there
+2. ensure `ip_forward` is OK which depends on the configuration of `iptables` and `sysctl config`, to test:
+    - `ping` a public IP to see whether it is OK, e.g.
+        + you can `ping` github public IP, `ping 192.30.252.131`
+3. ensure `dns` is OK which involves `/etc/ppp/pptpd-options`'s `ms-dns` config, to test:
+    - `ping github.com`
 
 # `yum info installed`
 
 > list installed package in redhat-like system
 
 # iptables debugging
-{% highlight sh%}
+```sh
 # log all drop packet(both incoming and outgoing)
 iptables -N LOGGING
 iptables -A INPUT -j LOGGING
@@ -127,7 +145,7 @@ iptables -A LOGGING -m limit --limit 2/min -j LOG --log-prefix "[IPTables-Droppe
 
 # log specific packet
 iptables -A INPUT -s 192.168.0.0/24 -j LOG --log-prefix='[your-debug-prefix] '
-{% endhighlight %}
+```
 
 > `iptables -A LOGGING -j DROP` may freeze your system
 
@@ -142,7 +160,7 @@ iptables -A INPUT -s 192.168.0.0/24 -j LOG --log-prefix='[your-debug-prefix] '
 
 > If (as with the default rsyslog configuration under CentOS 6.x) nothing is logged, you will need to configure rsyslog appropriately. We specified a --log-level of 7 – which is the debug syslog log level. So we need to configure rsyslog to send messages from the kern facility at log level 7 to somewhere useful.
 
-{% highlight sh %}
+```sh
 vim /etc/rsyslog.conf
 > ...
 > kern.debug                        /var/log/firewall.log
@@ -151,7 +169,7 @@ service rsyslog restart
 
 vim /etc/logrotate.d/syslog
 # add /var/log/firewall.log to list of filenames
-{% endhighlight %}
+```
 
 
 > It turns out that many modern Linux distributions come with 'rsyslog', which is a replacement for 'syslogd' or 'sysklogd', but starting with version 5.7.1 of rsyslog, a feature known as rate-limiting was added to the utility, and if a given process ID (PID) were to send more than 200 messages to /var/log/messages in a 5 second interval (the default setting in rsyslog), it will start to drop messages and place the following warning inside of /var/log/messages:
@@ -162,7 +180,7 @@ Jan 31 14:20:04 instance rsyslogd-2177: imuxsock begins to drop messages from pi
 
 > quick fix
 
-{% highlight sh %}
+```sh
 echo "\$SystemLogRateLimitInterval 2" >> /etc/rsyslog.conf
 echo "\$SystemLogRateLimitBurst 500" >> /etc/rsyslog.conf
 
@@ -173,7 +191,7 @@ $SystemLogRateLimitBurst 500
 
 # apply the changes
 /etc/init.d/rsyslog restart
-{% endhighlight %}
+```
 
 > Visit [here](https://www.digitalocean.com/community/tutorials/how-to-view-and-configure-linux-logs-on-ubuntu-and-centos) for more info about linux logs
 
