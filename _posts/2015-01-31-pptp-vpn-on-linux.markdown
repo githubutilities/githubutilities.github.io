@@ -123,7 +123,7 @@ service iptables restart
 
 ## Troubleshooting
 
-1. ensure `ppp` connection is OK which involves `firewall settings` and `/etc/ppp/chap-secrets`, to test:
+1. ensure `ppp` connection is OK which involves `firewall settings`(e.g. enable `TCP/IP` data flow) and `/etc/ppp/chap-secrets`, to test:
     - run `ifconfig` to see whether there is a `ppp` interface there
 2. ensure `ip_forward` is OK which depends on the configuration of `iptables` and `sysctl config`, to test:
     - `ping` a public IP to see whether it is OK, e.g.
