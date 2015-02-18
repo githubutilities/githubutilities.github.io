@@ -53,7 +53,7 @@ end
 openssl sha1 [full path to file]
 
 # generate `sha256`
-shasum -a 256
+shasum -a 256 <your-file>
 
 # List all `tap`s
 brew tap
