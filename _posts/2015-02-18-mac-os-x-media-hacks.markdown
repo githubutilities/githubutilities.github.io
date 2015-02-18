@@ -14,6 +14,8 @@ As one of the most important features of osx, airplay is a important hack for me
 * [wireless display](http://www.tomsguide.com/us/how-to-stream-to-tv,news-18335.html)
 * [Unofficial AirPlay Protocol Specification](http://nto.github.io/AirPlay.html)
 * [stackexchange airplay across vlans](http://networkengineering.stackexchange.com/questions/5954/what-exactly-is-required-to-make-airplay-work-across-vlans)
+    > you need to know `Avahi` and `dns-sd` to debug the network
+
 * [audio MIDI setup](http://apple.stackexchange.com/questions/143317/change-source-in-audio-midi-setup-via-command-line)
 * [mac airplay tools](http://computers.tutsplus.com/tutorials/5-ways-to-airplay-from-your-mac-to-your-television--mac-52157)
 
