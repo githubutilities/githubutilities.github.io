@@ -48,5 +48,5 @@ yum install <package-name>
     > ```
 * get info about a package `brew info <package-name>`
 * use `homebrew-brewdler` to manage your `homebrew`, run `brew brewdle dump` to backup your `homebrew`
-* `brew --cache` shows brew caches path
+* `brew --cache` shows brew caches path, run `brew cleanup` to clean up the caches
 * `brew --cellar` shows cellar path
