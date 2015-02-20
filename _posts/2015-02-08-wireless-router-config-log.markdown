@@ -27,7 +27,11 @@ Here is a sample to config WDS repeating:
 2. disable the DHCP function of WDS hop
 3. config the SSID and BSSID
 4. config router to use the same channel as root AP, restart and done!
-    > Change Xiaomi Router to auto-channel and auto-frequency and change the TP-link(TL-WR845N) to channel that Xiaomi Router is using, it works for me! Don't know why.
+    > 1. Change Xiaomi Router to **fix-channel** and **auto-frequency**.
+    > 2. Change the TP-link(TL-WR845N) to **same channel** that Xiaomi Router is using and **auto-frequency**.
+        > I discover there is some kind of incompatibilities if using fix-frequency of both routers.
+
+    > 3. It works for me! Don't know why.
 
 Reference
 
