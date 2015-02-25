@@ -44,6 +44,11 @@ Reference
 OpenWrt is Linux distribution for embedded devices and provides fully writable filesystem with package management instead of single, static firmware.
 
 
+# Router dead symptom
+
+For TL-WR845N, the config light is always on and all the others off.
+
+
 # ISSUE: Can not Connect to Wireless Router
 
 Try restart the router. If this works, try schedule the restart process.
