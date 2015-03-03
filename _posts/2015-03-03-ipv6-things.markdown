@@ -16,6 +16,17 @@ categories: IPv6
 
 to simplify IPv6 notation, 2001:db8:85a3:0:0:8a2e:370:7334 ==> 2001:db8:85a3::8a2e:370:7334
 
+
+# [Turn IPv6 on and off in Mac OS X](http://osxdaily.com/2014/04/18/disable-ipv6-mac-os-x/)
+
+```sh
+# turn off
+networksetup -setv6off Ethernet
+# turn on
+networksetup -setv6automatic Ethernet
+```
+
+
 # Visit IPv6 address using Chrome Address Bar
 
 Just surround your IPv6 literals with brackets. e.g. Enter `[2607:f8b0:4007:808::2004]` or `https://[2607:f8b0:4007:808::2004]` in Chrome address bar
@@ -55,6 +66,7 @@ host -t AAAA google.com
 * your ISP provide you with IPv6-enabled internet connection in which case your ISP must be whitelisted by Google to receive `AAAA` records
 * you can use tunnel broker such as `Hurricane Electric` or `SixXS` in which you can use their DNS caches
 
+> I setup `Hurricane Electric` and I got this error -- `IP is not ICMP pingable. Please make sure ICMP is not blocked. If you are blocking ICMP, please allow 66.220.2.74 through your firewall.`.
 
 # NOTICE: use one IPv6 DNS server as only DNS server may cause internet problem
 
