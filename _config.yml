@@ -12,4 +12,7 @@ github_username:  githubutilities
 # markdown: kramdown
 markdown: redcarpet
 redcarpet:
-   extensions: ["strikethrough"]
+   extensions: ["strikethrough", "tables", "superscript"]
+   #["hard_wrap", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
+   # use `superscript` for math expression
+   # use `tables` for table markdown syntax
