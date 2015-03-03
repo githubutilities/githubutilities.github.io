@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "Few Things About IPv6"
+date:   2015-03-03 18:19
+categories: IPv6
+---
+
+# Comparison
+
+|                   | IPv4                      | IPv6                   |
+| :-------------    | :-------------:           | :-----:                |
+| address size      | 32 bits                   | 128 bits               |
+| address format    | (dotted decimal notation) | (hexadecimal notation) |
+| prefix notation   | 192.168.1.1/24            | 2001:0DB8:0234::/48    |
+| number of address | 2^32                      | 2^128                  |
+
+to simplify IPv6 notation, 2001:db8:85a3:0:0:8a2e:370:7334 ==> 2001:db8:85a3::8a2e:370:7334
+
+# Visit IPv6 address using Chrome Address Bar
+
+Just surround your IPv6 literals with brackets. e.g. Enter `[2607:f8b0:4007:808::2004]` or `https://[2607:f8b0:4007:808::2004]` in Chrome address bar
+
+> `2607:f8b0:4007:808::2004` is one of IPv6 addresses of `google.com`
+
+
+# PING over IPv6
+
+```sh
+ping6 google.com
+```
+
+
+# DNS Lookup
+
+* `AAAA`: IPv6 DNS Record
+* `A`: IPv4 DNS Record
+
+```sh
+nslookup -type=AAAA google.com
+# or
+dig -t AAAA google.com
+# or
+host -t AAAA google.com
+```
+
+> * For OS X Yosemite, there are MDNS (Multicast DNS) and UDNS (Unicast DNS) caches in OS X Yosemite, use `sudo discoveryutil mdnsflushcache` and `sudo discoveryutil udnsflushcaches`
+> * For OS X Mavericks, use `dscacheutil -flushcache;sudo killall -HUP mDNSResponder`
+> * visit [here](http://osxdaily.com/2008/03/21/how-to-flush-your-dns-cache-in-mac-os-x/) for more info
+> 
+> For Chrome browser caches, go to `chrome://net-internals/#dns` and clear host cache
+
+
+# Getting IPv6 connectivity to the Internet
+
+* your ISP provide you with IPv6-enabled internet connection in which case your ISP must be whitelisted by Google to receive `AAAA` records
+* you can use tunnel broker such as `Hurricane Electric` or `SixXS` in which you can use their DNS caches
+
+
+# NOTICE: use one IPv6 DNS server as only DNS server may cause internet problem
+
+reference
+
+* [IPv6 OpenDNS Server](https://www.opendns.com/about/innovations/ipv6/)
+* [whatismyipv6](http://www.whatismyipv6.com/blogs/macipv6/wordpress/?cat=3)
+* [test your IPv6 and some info about DNS lookup process on different browsers](http://test-ipv6.at/nat.html.zh_TW)
+* [test your IPv6 status](http://www.test-ipv6.com/)
+* [info about specific IPv6 address](http://whois.arin.net/)
+* [cool ipv6 link](http://www.gogo6.com/group/coolipv6links)
