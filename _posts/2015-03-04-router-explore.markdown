@@ -10,6 +10,7 @@ categories: router
 * [maintaining your NIC(network interface card) for mac](http://www.ehow.com/how_8781864_disable-enable-nic-mac.html)
 * [some router backdoor](http://lcx.cc/?i=3127)
 * [some sample](http://www.right.com.cn/forum/forum.php?mod=viewthread&tid=130631)
+* [review on cheap router](http://bbs.xiaomi.cn/thread-7027790-1-1.html)
 * `WR` in `TL-WR845N` stands for `wide router` which indicates broadband
 
 
@@ -20,6 +21,7 @@ I tried `airmon-ng` and got this error `Wireless tools not found`.
 reference
 
 * [aircrack tutor](http://www.aircrack-ng.org/doku.php?id=tutorial)
+* [how to choose wireless adapter for hacking](http://null-byte.wonderhowto.com/how-to/hack-wi-fi-choosing-wireless-adapter-for-hacking-0157057/)
 
 
 # Router ROM
