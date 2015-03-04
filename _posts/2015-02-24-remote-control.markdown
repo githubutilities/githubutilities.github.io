@@ -22,6 +22,9 @@ Here are some `DDNS` service providers:
 * `Port Forwarding` can map IP address of our subnet to specific port of our public IP. **Map subnet address to specific port of wireless router.**
 * According to [wikipedia](http://en.wikipedia.org/wiki/DMZ_(computing)), a DMZ or demilitarized zone (sometimes referred to as a perimeter network) is a physical or logical subnetwork that contains and exposes an organization's external-facing services to a larger and untrusted network, usually the Internet. **It can map a subnet device to a gateway wireless router and act as a public network interface.**
 
+reference
+
+* [port forwarding and DMZ config file(edit `/etc/config/firewall` and run `/etc/init.d/firewall restart`) in xiaomi router(using openwrt)](http://www.miui.com/thread-1741288-1-1.html)
 
 # Virtual Network Computing(VNC)
 
