@@ -15,6 +15,21 @@ git log
 git show
 ```
 
+
+## Update Your Local Repo
+
+```sh
+# ignore all local changes
+git reset --hard
+git pull
+
+# keep all local changes
+git stash
+git pull
+git stash pop
+```
+
+
 ## Update Your fork
 
 ```sh
