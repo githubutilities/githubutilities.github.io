@@ -43,6 +43,10 @@ pbpaste
 exiftool -all= *.jpg
 ```
 
+# Bash Keyboard Shortcut
+
+please refer to [ss64](http://ss64.com/osx/syntax-bashkeyboard.html)
+
 reference
 
 * [setup os x development](http://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell)
