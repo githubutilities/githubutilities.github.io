@@ -47,6 +47,16 @@ exiftool -all= *.jpg
 
 please refer to [ss64](http://ss64.com/osx/syntax-bashkeyboard.html)
 
+
+# List open port
+
+```sh
+# For Mac OSX, you can use `lsof`
+lsof -i:8080
+# For Linux you may use `netstat`
+```
+
+
 reference
 
 * [setup os x development](http://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell)
