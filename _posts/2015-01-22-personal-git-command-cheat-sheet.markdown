@@ -166,6 +166,22 @@ git reset
 git reset --hard
 ```
 
+
+## [Duplicating a repository](https://help.github.com/articles/duplicating-a-repository/)
+
+```sh
+$ git clone --mirror http://git.code.sf.net/p/catacombae/hfsexplorer
+# Make a bare mirrored clone of the repository
+
+$ cd hfsexplorer
+$ git remote set-url --push origin https://github.com/githubutilities/hfsexplorer.git
+# Set the push location to your mirror
+
+$ git fetch -p origin
+$ git push --mirror origin
+```
+
+
 ## [Git Reset Tutor](https://www.atlassian.com/zh/git/tutorial/undoing-changes#!reset)
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
 ## [Git Cheat Sheet by Github Education](https://education.github.com/git-cheat-sheet-education.pdf)
