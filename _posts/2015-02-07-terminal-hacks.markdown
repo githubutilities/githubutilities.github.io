@@ -57,7 +57,40 @@ lsof -i:8080
 ```
 
 
-reference
+# String Editing
+
+```sh
+# using awk
+ls -l | awk '{print $9}'
+```
+
+
+# Mac OS X restarting services
+
+```sh
+# Fixed Finder crashes
+killall -KILL Finder
+# or option (=alt) + rightclicking the Finder icon in the Dock and selecting Relaunch
+
+# Fixed Dock or Spaces crashes
+killall -KILL Dock
+
+# Fixed Menubar crashes
+killall -KILL SystemUIServer
+```
+
+
+# Convert `plist` file to xml
+
+```sh
+# `com.apple.sidebarlists.plist` is originally stored as binary format
+cp ~/Library/Preferences/com.apple.sidebarlists.plist <your-folder>
+plutil -convert xml1 com.apple.sidebarlists.plist
+```
+
+
+# reference
 
 * [setup os x development](http://mattstauffer.co/blog/setting-up-a-new-os-x-development-machine-part-1-core-files-and-custom-shell)
 * [10 useful terminal hacks on os x](http://www.mitchchn.me/2014/os-x-terminal/)
+* [Mac OS X dock finder spaces or menubar crashes](http://www.thxbye.de/mac/mac-restarting-the-mac-os-x-dock-finder-spaces-or-menubar.html)
