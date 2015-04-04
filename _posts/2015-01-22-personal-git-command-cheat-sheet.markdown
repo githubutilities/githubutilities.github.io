@@ -166,6 +166,23 @@ git reset
 git reset --hard
 ```
 
+
+## [Tagging Release](http://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+```sh
+# add a tag
+git tag -a v0.1.0 -m 'version 0.1.0'
+
+# delete a tag
+git tag -d v1.0
+
+# list all tags
+git tag -l
+
+# push
+git push origin --tags
+```
+
 ## [Git Reset Tutor](https://www.atlassian.com/zh/git/tutorial/undoing-changes#!reset)
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
 ## [Git Cheat Sheet by Github Education](https://education.github.com/git-cheat-sheet-education.pdf)
