@@ -198,6 +198,11 @@ git tag -l
 git push origin --tags
 ```
 
+### Reference
+
+* [Adding and Removing Tags on GitHub](http://wptheming.com/2011/04/add-remove-github-tags/)
+* [Create GitHub releases via command line](http://www.barrykooij.com/create-github-releases-via-command-line/)
+* [Creating a branch or tag in Git](https://www.drupal.org/node/1066342)
 
 ## [Git Reset Tutor](https://www.atlassian.com/zh/git/tutorial/undoing-changes#!reset)
 ## [Setup git in vps]({% post_url 2015-01-21-git-server-on-vps %})
