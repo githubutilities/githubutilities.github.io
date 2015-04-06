@@ -198,6 +198,12 @@ git tag -l
 git push origin --tags
 ```
 
+
+## [Git Post Hooks](http://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+
+* [Push-to-Deploy](http://krisjordan.com/essays/setting-up-push-to-deploy-with-git)
+
+
 ### Reference
 
 * [Adding and Removing Tags on GitHub](http://wptheming.com/2011/04/add-remove-github-tags/)
