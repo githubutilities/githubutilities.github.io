@@ -86,6 +86,9 @@ killall -KILL SystemUIServer
 # `com.apple.sidebarlists.plist` is originally stored as binary format
 cp ~/Library/Preferences/com.apple.sidebarlists.plist <your-folder>
 plutil -convert xml1 com.apple.sidebarlists.plist
+
+# convert XML .plist to binary
+plutil -convert binary1 <your-xml-plist-file>
 ```
 
 
