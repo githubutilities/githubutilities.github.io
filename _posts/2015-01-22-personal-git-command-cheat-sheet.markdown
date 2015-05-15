@@ -39,6 +39,8 @@ git fetch upstream
 git checkout master
 
 # Make a clean fork and also a clean commit
+# It's always a good idea to fetch the upstream first
+git fetch upstream
 # The `--rebase` option places your changes on top of the latest commit without merges.
 # `git pull` is fetch + merge
 git pull --rebase upstream master
@@ -60,6 +62,16 @@ git diff <branch 1> <branch 2>
 #git rebase upstream/master
 ```
 
+## Resolving conflicts
+
+```sh
+# bring up a GUI tool to resolve it
+git mergetool
+```
+
+* [resolving a merge conflict guide from github](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
+* [fix merge conflicts in git from stackoverflow](http://stackoverflow.com/questions/161813/fix-merge-conflicts-in-git)
+
 ## Fix `.gitignore` not working
 
 ```sh
@@ -74,9 +86,9 @@ git rm --cached .DS_Store
 
 ## Clone specific branch
 
-{% highlight sh %}
+```sh
 git clone -b branch-name remote-repo
-{% endhighlight %}
+```
 
 ## Update local repository
 
