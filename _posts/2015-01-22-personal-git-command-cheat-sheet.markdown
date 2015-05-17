@@ -122,6 +122,8 @@ git branch -r
 git checkout branch-name
 {% endhighlight %}
 
+* [Git Branching Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
 ## Update index with all changes
 
 {% highlight sh %}
