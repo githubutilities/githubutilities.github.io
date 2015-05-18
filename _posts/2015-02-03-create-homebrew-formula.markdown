@@ -72,6 +72,11 @@ brew list | while read cask; do echo -n "$cask ->"; brew deps $cask | awk '{prin
 ```
 
 
+# Checking
+
+remember to run `brew cask audit <your-cask>` or `brew audit <your-formula>` before committing your changes.
+
+
 # Reference
 * [Homebrew formula cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md#formula-cookbook)
 * [GNU Autotools Tutor](https://www.lrde.epita.fr/~adl/dl/autotools.pdf)
