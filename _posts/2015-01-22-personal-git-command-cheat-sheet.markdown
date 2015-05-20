@@ -180,6 +180,8 @@ git reset
 git reset --hard
 ```
 
+* [automating script by vitorgalvao](https://github.com/vitorgalvao/tiny-scripts/blob/master/prfix)
+
 
 ## [Duplicating a repository](https://help.github.com/articles/duplicating-a-repository/)
 
