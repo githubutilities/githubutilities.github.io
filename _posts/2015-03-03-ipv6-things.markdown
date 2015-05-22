@@ -27,6 +27,14 @@ networksetup -setv6automatic Ethernet
 ```
 
 
+# Query Specific DNS Server
+
+```sh
+dig A ns1.google.com @ns.google.com
+```
+
+* [using-dig-to-query-a-specific-dns-server-name-server-directly-linux-bsd-osx](http://droptips.com/using-dig-to-query-a-specific-dns-server-name-server-directly-linux-bsd-osx)
+
 # Visit IPv6 address using Chrome Address Bar
 
 Just surround your IPv6 literals with brackets. e.g. Enter `[2607:f8b0:4007:808::2004]` or `https://[2607:f8b0:4007:808::2004]` in Chrome address bar
