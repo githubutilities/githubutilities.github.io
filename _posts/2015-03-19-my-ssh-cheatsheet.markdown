@@ -2,7 +2,7 @@
 layout: post
 title:  "My SSH Cheatsheet"
 date:   2015-03-19 10:29
-categories: router
+categories: ssh
 ---
 
 # Enter SSH passphrase only once
