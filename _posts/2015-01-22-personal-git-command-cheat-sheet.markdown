@@ -5,6 +5,8 @@ date:   2015-01-22 17:10
 categories: git
 ---
 
+* [understanding git conceptually](http://www.sbf5.com/~cduan/technical/git/)
+
 ## Show Git Status
 
 ```sh
