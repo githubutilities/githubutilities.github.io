@@ -30,6 +30,16 @@ git stash pop
 ```
 
 
+## Creating Multiple Pull Requests
+
+```sh
+# PR is based on branch, and is one-to-one relationship
+# create multiple branches to isolate the PRs
+git checkout -b <branch-name>
+# do you jobs and commit
+```
+
+
 ## Update Your fork
 
 ```sh
@@ -90,22 +100,17 @@ git rm --cached .DS_Store
 git clone -b branch-name remote-repo
 ```
 
-## Update local repository
-
-{% highlight sh %}
-git pull
-{% endhighlight %}
 
 ## View Git remote URL
 
-{% highlight sh %}
+```sh
 git remote -v
 git remote show origin
-{% endhighlight %}
+```
 
 ## Branching
 
-{% highlight sh %}
+```sh
 # show current branch
 git branch
 
@@ -120,15 +125,15 @@ git branch -r
 
 # switch between branches
 git checkout branch-name
-{% endhighlight %}
+```
 
 * [Git Branching Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ## Update index with all changes
 
-{% highlight sh %}
+```sh
 git add -A
-{% endhighlight %}
+```
 
 ## Stash
 
