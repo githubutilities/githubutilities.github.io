@@ -9,7 +9,7 @@ categories: linux,glibc
 
 * `gethostbyname()` buffer overflow attach, run the following code to test whether the system is vulnerable
 
-{% highlight c %}
+```c
 /* ghosttest.c:  GHOST vulnerability tester */
 /* Credit: http://www.openwall.com/lists/oss-security/2015/01/27/9 */
 #include <netdb.h>
@@ -50,16 +50,17 @@ int main(void) {
   puts("should not happen");
   exit(EXIT_FAILURE);
 }
-{% endhighlight %}
+```
 
 > if you got `vulnerable` output, run the following command
-{% highlight sh %}
+
+```sh
 # debian-like system
 apt-get update
 apt-get install libc6
 # redhat-like system
 yum update glibc
-{% endhighlight %}
+```
 
 > run `lsof | grep libc | awk '{print $1}' | sort | uniq` to get the packages dependencies
 

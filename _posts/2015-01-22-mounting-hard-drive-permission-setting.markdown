@@ -20,8 +20,9 @@ simple run `mount -a`
 ## Change the disk owner
 
 simply change the owner of the drive which will be remember by the file system after remount
-{% highlight sh %}
+
+```sh
 chown -R username mount-point
-{% endhighlight %}
+```
 
 > You can also change the permission using `chmod` and `chgrp` for owner group (use `usermod` for group editing)

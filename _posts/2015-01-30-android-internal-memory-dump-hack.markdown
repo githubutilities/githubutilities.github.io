@@ -19,7 +19,7 @@ categories: linux,android,busybox,root
 
 ## dump the data using `netcat`
 
-{% highlight sh %}
+```sh
 adb forward tcp:5555 tcp:5555
 adb shell
 /system/bin/busybox nc -l -p 5555 -e /system/bin/busybox dd if=/dev/block/mmcblk0p12
@@ -27,7 +27,7 @@ adb shell
 adb forward tcp:5555 tcp:5555
 cd /nexus
 nc 127.0.0.1 5555 | pv -i 0.5 > mmcblk0p12.raw
-{% endhighlight %}
+```
 
 ## Reference
 * [xda developers forum](http://forum.xda-developers.com/galaxy-nexus/general/guide-internal-memory-data-recovery-yes-t1994705)
