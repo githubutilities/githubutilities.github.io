@@ -157,6 +157,9 @@ git stash pop
 * to refactor the source code
 
 ```sh
+# Squashing commits, e.g. squashing previous two commits
+git rebase -i HEAD~2
+
 # show file changes history
 git log -p <filename>
 
