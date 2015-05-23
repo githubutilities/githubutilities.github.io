@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   This is githubutilities dedicating to upgrade personal workflow.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://githubutilities.github.io" # the base hostname & protocol for your site
-twitter_username: 
+twitter_username:
 github_username:  githubutilities
 
 # Build settings
@@ -16,3 +16,7 @@ redcarpet:
    #["hard_wrap", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
    # use `superscript` for math expression
    # use `tables` for table markdown syntax
+
+# Plugins
+gems:
+  - jekyll-sitemap
