@@ -230,6 +230,13 @@ git push origin --tags
 * [Push-to-Deploy](http://krisjordan.com/essays/setting-up-push-to-deploy-with-git)
 
 
+## Revert changes to a specific file
+
+```sh
+git checkout HEAD -- <your-file-name>
+```
+
+
 ### Reference
 
 * [Adding and Removing Tags on GitHub](http://wptheming.com/2011/04/add-remove-github-tags/)
