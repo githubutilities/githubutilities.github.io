@@ -35,3 +35,6 @@ _site
 
 # Mac OS X finder caches
 .DS_Store
+
+# bundler gemfile
+Gemfile.lock
