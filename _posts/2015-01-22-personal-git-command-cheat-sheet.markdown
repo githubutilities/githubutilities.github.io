@@ -236,6 +236,8 @@ git push origin --tags
 git checkout HEAD -- <your-file-name>
 ```
 
+## [Default push branch](http://stackoverflow.com/questions/948354/default-behavior-of-git-push-without-a-branch-specified)
+
 
 ### Reference
 
