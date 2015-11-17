@@ -2,7 +2,7 @@
 layout: post
 title:  "DNS Settings"
 date:   2015-02-04 16:50
-categories: chrome,dns
+categories: chrome dns
 ---
 
 # Clear Chrome DNS Cache

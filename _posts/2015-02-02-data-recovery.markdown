@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Recovery"
 date:   2015-02-02 11:45
-categories: linux,macos,fs
+categories: linux macos fs
 ---
 
 # Difference between filesystem recovery and individual files recovery[1][difference_askubutun]

@@ -2,7 +2,7 @@
 layout: post
 title:  "Sematic UI pitfalls"
 date:   2015-01-19 12:46
-categories: sematic ui
+categories: sematic-ui
 ---
 
 here is the code snippet in `sematic.css`

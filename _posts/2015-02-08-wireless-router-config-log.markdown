@@ -2,7 +2,7 @@
 layout: post
 title:  "Wireless Router Config Log"
 date:   2015-02-08 14:42
-categories: wireless,router
+categories: wireless router
 ---
 
 # Wireless Distribution System(WDS)

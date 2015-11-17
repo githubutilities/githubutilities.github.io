@@ -2,7 +2,7 @@
 layout: post
 title:  "Unix-like System Package Mangement"
 date:   2015-02-04 15:00
-categories: apt,yum
+categories: apt yum
 ---
 
 # Compile

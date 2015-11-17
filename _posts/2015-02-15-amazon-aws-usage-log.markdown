@@ -2,7 +2,7 @@
 layout: post
 title:  "Amazon AWS Usage Log"
 date:   2015-02-14 22:42
-categories: aws,registration
+categories: aws registration
 ---
 
 # Entry one -- Registration Process

@@ -2,7 +2,7 @@
 layout: post
 title:  "Cloud Storage On VPS"
 date:   2015-02-03 21:22
-categories: ssh,ftp,sftp,rsync
+categories: ssh ftp sftp rsync
 ---
 
 # Use `sshfs` to remotely mount

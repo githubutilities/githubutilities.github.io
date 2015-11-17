@@ -2,7 +2,7 @@
 layout: post
 title:  "Create Homebrew Formula"
 date:   2015-02-03 16:45
-categories: homebrew,brew
+categories: homebrew brew
 ---
 
 # Scaffolding

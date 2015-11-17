@@ -2,7 +2,7 @@
 layout: post
 title:  "Mac OS X Filesystem Support"
 date:   2015-02-04 16:50
-categories: apt,yum
+categories: apt yum
 ---
 
 # [Write in NTFS](http://apple.stackexchange.com/questions/106589/write-in-ntfs-using-mavericks)

@@ -2,7 +2,7 @@
 layout: post
 title:  "Mac OS X Media Hacks"
 date:   2015-02-18 16:31
-categories: mac,osx,media,hack
+categories: mac osx media hack
 ---
 
 # Airplay

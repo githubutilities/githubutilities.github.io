@@ -2,7 +2,7 @@
 layout: post
 title:  "Hack Android Phone And Dump Internal Memory"
 date:   2015-01-30 12:25
-categories: linux,android,busybox,root
+categories: linux android busybox root
 ---
 
 ## Root the phone

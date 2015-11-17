@@ -2,7 +2,7 @@
 layout: post
 title:  "Mount Hard Drive Permission Setting"
 date:   2015-01-22 10:30
-categories: Linux, mount
+categories: Linux mount
 ---
 
 ## Edit `/etc/fstab`, e.g.

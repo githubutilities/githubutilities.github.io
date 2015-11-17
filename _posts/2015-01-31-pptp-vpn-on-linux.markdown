@@ -2,7 +2,7 @@
 layout: post
 title:  "PPTP VPN on Linux"
 date:   2015-01-31 00:33
-categories: linux,redhat
+categories: linux redhat
 ---
 
 ## Test kernel `mppe` support

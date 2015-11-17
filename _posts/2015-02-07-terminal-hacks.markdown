@@ -2,7 +2,7 @@
 layout: post
 title:  "Terminal Hacks"
 date:   2015-02-07 10:42
-categories: terminal,command
+categories: terminal command
 ---
 
 # Make a beep sound when finished

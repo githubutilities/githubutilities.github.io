@@ -2,7 +2,7 @@
 layout: post
 title:  "Remote Control"
 date:   2015-02-24 22:57
-categories: remote,router
+categories: remote router
 ---
 
 # Dynamic DNS(DDNS)

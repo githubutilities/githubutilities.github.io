@@ -2,7 +2,7 @@
 layout: post
 title:  "Vulnerable Attack"
 date:   2015-01-30 20:35
-categories: linux,glibc
+categories: linux glibc
 ---
 
 ## glibc vulnerability([CVE-2015-0235](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0235))

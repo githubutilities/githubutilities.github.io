@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby Package Manager"
 date:   2015-01-31 19:09
-categories: ruby,mac,osx
+categories: ruby mac osx
 ---
 
 # Gem and Bundler are different package manager and has different package under its folder
