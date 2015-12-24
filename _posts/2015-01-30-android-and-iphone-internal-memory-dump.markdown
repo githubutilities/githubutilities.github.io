@@ -45,6 +45,8 @@ nc 192.168.1.108 5555 | pv -i 0.5 > iphone.raw
 > NOTE: `/dev/disk0` is a block device while `/dev/rdisk0` is a character device. You can't choose a block device to dump. 
 > 
 > Other solution can be found [here](http://www.cgsecurity.org/wiki/Recover_data_from_an_iPhone) using `ssh`(`dd if=/dev/rdisk0 bs=4096 | ssh -C username@computer_IP 'dd of=iphone.img'`) instead of `netcat`.
+> 
+> IMPORTANT: Because data stored in iDevice is encrypted since iPhone 3GS and later(refer [here](https://support.apple.com/en-us/HT202064)), it may need to brute-force the encryption key(e.g. AES).
 
 * [iPad2 data recovery](http://outergalactic.org/blog/no-love-for-ipad2-data-recovery/)
 * [some iPhone data protection stuff for data forensic purpose](https://code.google.com/p/iphone-dataprotection/)
