@@ -58,7 +58,7 @@ if you are unable to use these utilities to find the backup superblocks (perhaps
 
 # Recover individual files from recovered image [link](https://help.ubuntu.com/community/DataRecovery#Extract_individual_files_from_recovered_image)
 
-If you are using android and your internal storage cannot be mounted as USB Mass Storage, you can create a raw image by [storage dump]({% post_url 2015-01-30-android-internal-memory-dump-hack %})
+If you are using android and your internal storage cannot be mounted as USB Mass Storage, you can create a raw image by [storage dump]({% post_url 2015-01-30-android-and-iphone-internal-memory-dump %})
 
 Use the following utilities to recover from image file
 
