@@ -50,6 +50,7 @@ nc 192.168.1.108 5555 | pv -i 0.5 > iphone.raw
 
 * [iPad2 data recovery](http://outergalactic.org/blog/no-love-for-ipad2-data-recovery/)
 * [some iPhone data protection stuff for data forensic purpose](https://code.google.com/p/iphone-dataprotection/)
+* [overcoming iOS Data protection to re-enable iPhone forensics](https://media.blackhat.com/bh-us-11/Belenko/BH_US_11_Belenko_iOS_Forensics_Slides.pdf)
 
 
 ## Reference
